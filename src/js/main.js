@@ -1,0 +1,11 @@
+require.config({
+    baseUrl:'./src/js/',
+    paths:{
+        a:'./a',
+        b:'./b'
+    }
+})
+define(['a','b'],function(info,info2){
+    console.log(info);
+    console.log(info2);
+});
